@@ -1,3 +1,5 @@
+import { withBase } from '../lib/paths'
+
 export function Footer() {
   return (
     <footer className="footer">
@@ -10,7 +12,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="Facebook" src="/Facebook_logo.png" />
+            <img alt="Facebook" src={withBase('Facebook_logo.png')} />
             Facebook
           </a>
         </li>
@@ -20,7 +22,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="Instagram" src="/Instagram_logo.png" />
+            <img alt="Instagram" src={withBase('Instagram_logo.png')} />
             Instagram
           </a>
         </li>
@@ -30,7 +32,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="LinkedIn" src="/Linkedin_logo.png" />
+            <img alt="LinkedIn" src={withBase('Linkedin_logo.png')} />
             LinkedIn
           </a>
         </li>
